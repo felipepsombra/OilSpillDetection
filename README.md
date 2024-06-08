@@ -1,58 +1,58 @@
 # OilSpillDetection
 
-A detecção de manchas de óleo no mar é crucial para proteger o ambiente e responder a desastres ecológicos, prevenindo danos à vida marinha e aos ecossistemas costeiros. Este projeto tem como objetivo desenvolver um algoritmo em Python para auxiliar na detecção de manchas de óleo na superfície dos oceanos, identificando áreas afetadas com base em imagens de satélite.
+Detecting oil spills in the sea is crucial for protecting the environment and responding to ecological disasters, preventing harm to marine life and coastal ecosystems. This project aims to develop a Python algorithm to assist in detecting oil spills on the ocean surface by identifying affected areas based on satellite images.
 
-## Funcionalidades
+## Features
 
-- Solicitação do tamanho dos quadrados da grade em metros quadrados.
-- Entrada de dados pelo usuário para cada quadrado da grade, identificando água ('A') ou óleo ('O').
-- Armazenamento dos dados inseridos pelo usuário em uma lista.
-- Análise dos dados para detectar a presença de manchas de óleo.
-- Impressão dos dados analisados, indicando a presença de óleo e suas posições na lista.
-- Cálculo da área total das manchas de óleo com base nos dados inseridos.
+- Request the size of the grid squares in square meters.
+- User input for each grid square, identifying water ('A') or oil ('O').
+- Store the user input data in a list.
+- Analyze the data to detect the presence of oil spills.
+- Print the analyzed data, indicating the presence of oil and its positions in the list.
+- Calculate the total area of oil spills based on the user input data.
 
-## Como Usar
+## How to Use
 
-1. Clone o repositório:
+1. Clone the repository:
     ```bash
-    git clone https://github.com/seuusuario/OilSpillDetection.git
+    git clone https://github.com/yourusername/OilSpillDetection.git
     ```
-2. Navegue até o diretório do projeto:
+2. Navigate to the project directory:
     ```bash
     cd OilSpillDetection
     ```
-3. Execute o script Python:
+3. Run the Python script:
     ```bash
     python3 oil_spill_detection.py
     ```
 
-## Estrutura do Código
+## Code Structure
 
-O projeto consiste em várias funções para obter entradas do usuário, processar dados e gerar saídas:
+The project consists of several functions to obtain user input, process data, and generate output:
 
-- `obter_tamanho_quadrado()`: Solicita e retorna o tamanho dos quadrados em metros quadrados.
-- `obter_numero_de_quadrados()`: Solicita e retorna o número de quadrados que o usuário deseja analisar.
-- `capturar_valores_quadrados(total_quadrados)`: Captura os valores de cada quadrado (água ou óleo) e os armazena em uma lista.
-- `mostrar_quadrados(valores)`: Imprime os valores capturados dos quadrados.
-- `analisar_manchas_oleo(valores, area_quadrado)`: Analisa os dados para detectar manchas de óleo e calcula a área total das manchas.
+- `get_square_size()`: Requests and returns the size of the squares in square meters.
+- `get_number_of_squares()`: Requests and returns the number of squares the user wants to analyze.
+- `capture_square_values(total_squares)`: Captures the values of each square (water or oil) and stores them in a list.
+- `display_squares(values)`: Prints the captured values of the squares.
+- `analyze_oil_spills(values, square_area)`: Analyzes the data to detect oil spills and calculates the total area of the spills.
 
-## Exemplo de Uso
+## Example Usage
 
 ```plaintext
-Digite o tamanho do quadrado em m²: 10
-Digite o número de quadrados: 5
-Digite o valor do quadrado 1 (A para água, O para óleo): O
-Digite o valor do quadrado 2 (A para água, O para óleo): A
-Digite o valor do quadrado 3 (A para água, O para óleo): O
-Digite o valor do quadrado 4 (A para água, O para óleo): A
-Digite o valor do quadrado 5 (A para água, O para óleo): O
+Enter the size of the square in m²: 10
+Enter the number of squares: 5
+Enter the value of square 1 (A for water, O for oil): O
+Enter the value of square 2 (A for water, O for oil): A
+Enter the value of square 3 (A for water, O for oil): O
+Enter the value of square 4 (A for water, O for oil): A
+Enter the value of square 5 (A for water, O for oil): O
 
-Valores dos quadrados:
-Quadrado 1: O
-Quadrado 2: A
-Quadrado 3: O
-Quadrado 4: A
-Quadrado 5: O
+Square values:
+Square 1: O
+Square 2: A
+Square 3: O
+Square 4: A
+Square 5: O
 
-Manchas de óleo nas posições: [0, 2, 4]
-Área total das manchas de óleo: 30.00 m²
+Oil spills detected at positions: [0, 2, 4]
+Total area of oil spills: 30.00 m²
